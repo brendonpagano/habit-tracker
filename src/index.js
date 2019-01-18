@@ -1,7 +1,11 @@
+// Node Modules
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// Components
 import App from './App';
+
+// Inner Modules
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
