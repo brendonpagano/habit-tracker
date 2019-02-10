@@ -1,7 +1,8 @@
 {
   "extends": [
     "google",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": 2017,
@@ -9,6 +10,9 @@
     "ecmaFeatures": {
       "jsx": true
     }
+  },
+  "rules": {
+    "object-curly-spacing": "off"
   },
   "env": {
     "es6": true
