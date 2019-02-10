@@ -21,10 +21,12 @@ const middlewares = [
 
 
 // Create the redux store.
-const store = createStore(
+const configureStore = (preloadedState) => createStore(
   createRootReducer(history),
+  preloadedState,
   composeEnhancers(applyMiddleware(...middlewares))
 );
 
 
-export default { store, history };
+export default configureStore;
+export { history };
