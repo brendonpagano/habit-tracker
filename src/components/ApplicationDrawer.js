@@ -22,7 +22,6 @@ const styles = (theme) => ({
 
 const ApplicationDrawer = ({ classes }) => (
   <div>
-    <div className={classes.toolbar} />
     <List>
       {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
         <ListItem button key={text}>
