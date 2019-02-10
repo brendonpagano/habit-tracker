@@ -9,7 +9,7 @@ import configureStore, { history } from './redux/store';
 // Components
 import ApplicationFrame from './components/ApplicationFrame';
 import OfflineShield from './components/OfflineShield';
-import AddHabitButton from './components/AddHabitButton';
+import AppRouter from './routes';
 
 
 // Create the redux store.
@@ -21,7 +21,7 @@ const App = () => (
     <ConnectedRouter history={history}>
       <ApplicationFrame>
         <OfflineShield>
-            <AddHabitButton />
+          <AppRouter />
         </OfflineShield>
       </ApplicationFrame>
     </ConnectedRouter>
