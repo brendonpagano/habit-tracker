@@ -22,7 +22,7 @@ const middlewares = [
 
 // Create the redux store.
 const configureStore = (preloadedState) => createStore(
-  createRootReducer(history),
+  createRootReducer({ history }),
   preloadedState,
   composeEnhancers(applyMiddleware(...middlewares))
 );
