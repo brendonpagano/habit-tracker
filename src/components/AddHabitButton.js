@@ -23,6 +23,7 @@ const AddHabitButton = ({ classes, onClick }) => (
   <Fab
     color='primary'
     className={classes.fab}
+    onClick={onClick}
   >
     <AddIcon />
   </Fab>
