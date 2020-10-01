@@ -1,32 +1,26 @@
-// Node Modules
 import React from 'react';
-import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router'
+import logo from './logo.svg';
+import './App.css';
 
-// Inner Modules
-import configureStore, { history } from './redux/store';
-
-// Components
-import ApplicationFrame from './components/ApplicationFrame';
-import OfflineShield from './components/OfflineShield';
-import AppRouter from './routes';
-
-
-// Create the redux store.
-const reduxStore = configureStore();
-
-
-const App = () => (
-  <Provider store={reduxStore}>
-    <ConnectedRouter history={history}>
-      <ApplicationFrame>
-        <OfflineShield>
-          <AppRouter />
-        </OfflineShield>
-      </ApplicationFrame>
-    </ConnectedRouter>
-  </Provider>
-);
-
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
 export default App;
